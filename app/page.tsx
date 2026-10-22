@@ -1,69 +1,176 @@
-import Image from "next/image";
+'use client';
+
+import React, { useState } from 'react';
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { WorldOfPossibility } from '@/components/WorldOfPossibility';
+import { VisionToReality } from '@/components/VisionToReality';
+import { OurCollection } from '@/components/OurCollection';
+import { ExperienceWorldTestimonial } from '@/components/ExperienceWorldTestimonial';
+import { PerfectStayBooking } from '@/components/PerfectStayBooking';
+import { Footer } from '@/components/Footer';
+
+import { RoomDetailModal } from '@/components/RoomDetailModal';
+import { BookingModal } from '@/components/BookingModal';
+import { VideoTourModal } from '@/components/VideoTourModal';
+import { LocationModal } from '@/components/LocationModal';
+import { AuthModal } from '@/components/AuthModal';
+
+import { ROOMS_DATA } from '@/data/mockData';
+import { RoomItem, GenderCategory } from '@/types';
 
 export default function Home() {
+  // Search & Filter State
+  const [category, setCategory] = useState<GenderCategory>('Semua');
+  const [locationQuery, setLocationQuery] = useState('');
+  const [roomTypeFilter, setRoomTypeFilter] = useState('');
+  const [maxPrice, setMaxPrice] = useState<number>(5000000);
+  const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
+
+  // Modals State
+  const [detailRoom, setDetailRoom] = useState<RoomItem | null>(null);
+  const [bookingRoom, setBookingRoom] = useState<RoomItem | null>(null);
+  const [bookingPrefill, setBookingPrefill] = useState<{
+    checkInDate?: string;
+    durationMonths?: number;
+    occupants?: number;
+  }>({});
+  const [videoRoom, setVideoRoom] = useState<RoomItem | null>(null);
+  const [showLocationModal, setShowLocationModal] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+
+  const handleScrollToSearch = () => {
+    const el = document.getElementById('search-filter-box');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleApplySearch = () => {
+    const el = document.getElementById('collection');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleQuickBook = (params: {
+    room: RoomItem;
+    checkInDate: string;
+    durationMonths: number;
+    occupants: number;
+  }) => {
+    setBookingRoom(params.room);
+    setBookingPrefill({
+      checkInDate: params.checkInDate,
+      durationMonths: params.durationMonths,
+      occupants: params.occupants,
+    });
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="min-h-screen flex flex-col bg-[#F8F5EE] text-[#1A1412]">
+      {/* 1. Header Navigation Bar */}
+      <Navbar
+        onOpenAuth={() => setShowAuthModal(true)}
+        onScrollToSearch={handleScrollToSearch}
+      />
+
+      <main className="flex-1">
+        {/* 2. Hero Section: Full photo, Where Luxury Meets the Extraordinary, & Floating Search Box */}
+        <Hero
+          category={category}
+          setCategory={setCategory}
+          locationQuery={locationQuery}
+          setLocationQuery={setLocationQuery}
+          roomTypeFilter={roomTypeFilter}
+          setRoomTypeFilter={setRoomTypeFilter}
+          maxPrice={maxPrice}
+          setMaxPrice={setMaxPrice}
+          billingCycle={billingCycle}
+          setBillingCycle={setBillingCycle}
+          matchingCount={ROOMS_DATA.length}
+          onApplySearch={handleApplySearch}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        {/* 3. Section 2: NOT JUST A STAY, A WORLD OF POSSIBILITY & Discover Exceptional Stays */}
+        <WorldOfPossibility />
+
+        {/* 4. Section 3: We're Committed to Turning your Vision into Reality + Stats & Category Circles */}
+        <VisionToReality />
+
+        {/* 5. Section 4: OUR COLLECTION - Exceptional Stays that define the Art of Travel */}
+        <OurCollection
+          onSelectDetail={(room) => setDetailRoom(room)}
+          onSelectBooking={(room) => {
+            setBookingRoom(room);
+            setBookingPrefill({});
+          }}
+          onOpenVideoTour={(room) => setVideoRoom(room)}
+        />
+
+        {/* 6. Section 5: A stay can change the [badge] way you experience [avatars] the world */}
+        <ExperienceWorldTestimonial />
+
+        {/* 7. Section 6: Find Your Perfect Stay (Cave Pool Sanctuary + Floating Booking Card) */}
+        <PerfectStayBooking
+          onQuickBook={handleQuickBook}
+          onOpenMapModal={() => setShowLocationModal(true)}
+        />
       </main>
+
+      {/* 8. Section 7: Dark Footer with Massive "kost sby" Typography */}
+      <Footer />
+
+      {/* Interactive Modals */}
+      {detailRoom && (
+        <RoomDetailModal
+          room={detailRoom}
+          billingCycle={billingCycle}
+          onClose={() => setDetailRoom(null)}
+          onSelectBooking={(r) => {
+            setDetailRoom(null);
+            setBookingRoom(r);
+            setBookingPrefill({});
+          }}
+          onOpenVideoTour={(r) => {
+            setDetailRoom(null);
+            setVideoRoom(r);
+          }}
+        />
+      )}
+
+      {bookingRoom && (
+        <BookingModal
+          room={bookingRoom}
+          initialCheckInDate={bookingPrefill.checkInDate}
+          initialDuration={bookingPrefill.durationMonths}
+          initialOccupants={bookingPrefill.occupants}
+          onClose={() => {
+            setBookingRoom(null);
+            setBookingPrefill({});
+          }}
+        />
+      )}
+
+      {videoRoom && (
+        <VideoTourModal
+          room={videoRoom}
+          onClose={() => setVideoRoom(null)}
+          onSelectBooking={(r) => {
+            setVideoRoom(null);
+            setBookingRoom(r);
+            setBookingPrefill({});
+          }}
+        />
+      )}
+
+      {showLocationModal && (
+        <LocationModal onClose={() => setShowLocationModal(false)} />
+      )}
+
+      {showAuthModal && (
+        <AuthModal onClose={() => setShowAuthModal(false)} />
+      )}
     </div>
   );
 }
