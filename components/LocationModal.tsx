@@ -27,7 +27,7 @@ export const LocationModal: React.FC<LocationModalProps> = ({ onClose }) => {
               Peta Lokasi & Akses
             </span>
             <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#1A1412]">
-              Kost Sby — Kos Rindu Wonokromo
+              Griya Logos Kost Eksklusif Sidoarjo
             </h3>
           </div>
 
@@ -44,18 +44,18 @@ export const LocationModal: React.FC<LocationModalProps> = ({ onClose }) => {
           {/* Map Visual Preview Container */}
           <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-[#E8E2D4] shadow-md bg-stone-100">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5703911485424!2d112.7346226!3d-7.3079022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb89f3b7a2c7%3A0x8c5b5d5f5d5f5d5f!2sJl.%20Pulo%20Wonokromo%20No.9!5e0!3m2!1sid!2sid!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63309.79979313411!2d112.67069775!3d-7.4478149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e13bb2ebf7f3%3A0xbcf7051f6bebf509!2sSidoarjo%2C%20Sidoarjo%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '320px' }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Peta Kost Sby Wonokromo"
+              title="Peta Griya Logos Sidoarjo"
             />
 
             <a
-              href="https://maps.google.com/?q=Jl.+Pulo+Wonokromo+No.+9+Surabaya"
+              href="https://maps.google.com/?q=Sidoarjo+Kota+Jawa+Timur"
               target="_blank"
               rel="noopener noreferrer"
               className="absolute bottom-4 right-4 flex items-center gap-2 px-4 py-2.5 rounded-full bg-white text-[#1A1412] text-xs font-bold shadow-xl hover:bg-[#1A1412] hover:text-white transition-colors"
@@ -71,10 +71,10 @@ export const LocationModal: React.FC<LocationModalProps> = ({ onClose }) => {
               Alamat Lengkap
             </span>
             <p className="text-sm font-semibold text-[#1A1412]">
-              Jl. Pulo Wonokromo No. 9, Wonokromo, Surabaya Selatan, Jawa Timur 60241
+              Sidoarjo Kota, Jawa Timur (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo)
             </p>
             <p className="text-xs text-[#6E6259]">
-              Patokan: 3 menit dari Stasiun Wonokromo dan DTC (Darmo Trade Center), akses jalan mudah dilalui motor dan mobil dengan area parkir berkanopi.
+              Patokan: Dekat dengan Akses Gerbang Tol Sidoarjo dan Stasiun Sidoarjo, jalan lebar mudah diakses mobil dan motor dengan area parkir luas berkanopi.
             </p>
           </div>
 

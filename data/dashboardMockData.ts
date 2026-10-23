@@ -22,27 +22,27 @@ export const DEMO_TENANT: AuthUser = {
   contractEnd: '10 Februari 2027',
   monthlyRent: 1400000,
   smartLockPin: '7391#',
-  wifiSSID: 'KOST_SBY_LT2_100M',
-  wifiPassword: 'kostrindu-sby-2026',
+  wifiSSID: 'GRIYA_LOGOS_LT2_WIFI',
+  wifiPassword: 'griyalogos-sda-2026',
   electricityKwh: 86.5,
 };
 
 export const DEMO_OWNER: AuthUser = {
   id: 'usr-owner-01',
   name: 'Bpk. Hendrawan Pratama',
-  email: 'pengelola@kostsby.com',
-  phone: '0812-3456-7890',
+  email: 'pengelola@griyalogos.com',
+  phone: '0823-3266-0126',
   role: 'pengelola',
   avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
-  propertyName: 'Kost Sby — Kos Rindu Wonokromo Surabaya',
-  propertyAddress: 'Jl. Pulo Wonokromo No. 9, Wonokromo, Surabaya Selatan',
+  propertyName: 'Griya Logos Kost Eksklusif Sidoarjo',
+  propertyAddress: 'Sidoarjo Kota, Jawa Timur (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo)',
   totalRooms: 35,
 };
 
 export const INITIAL_INVOICES: InvoiceItem[] = [
   {
     id: 'inv-2026-11-01',
-    invoiceNumber: 'INV/KSBY/2026/XI/001',
+    invoiceNumber: 'INV/GLGS/2026/XI/001',
     month: 'November 2026',
     tenantId: 'usr-tenant-01',
     tenantName: 'Aura Salsabila',
@@ -59,7 +59,7 @@ export const INITIAL_INVOICES: InvoiceItem[] = [
   },
   {
     id: 'inv-2026-10-01',
-    invoiceNumber: 'INV/KSBY/2026/X/001',
+    invoiceNumber: 'INV/GLGS/2026/X/001',
     month: 'Oktober 2026',
     tenantId: 'usr-tenant-01',
     tenantName: 'Aura Salsabila',
@@ -78,7 +78,7 @@ export const INITIAL_INVOICES: InvoiceItem[] = [
   },
   {
     id: 'inv-2026-09-01',
-    invoiceNumber: 'INV/KSBY/2026/IX/001',
+    invoiceNumber: 'INV/GLGS/2026/IX/001',
     month: 'September 2026',
     tenantId: 'usr-tenant-01',
     tenantName: 'Aura Salsabila',
@@ -97,7 +97,7 @@ export const INITIAL_INVOICES: InvoiceItem[] = [
   },
   {
     id: 'inv-2026-11-02',
-    invoiceNumber: 'INV/KSBY/2026/XI/002',
+    invoiceNumber: 'INV/GLGS/2026/XI/002',
     month: 'November 2026',
     tenantId: 'usr-tenant-02',
     tenantName: 'Kevin Anggara',
@@ -117,7 +117,7 @@ export const INITIAL_INVOICES: InvoiceItem[] = [
   },
   {
     id: 'inv-2026-11-03',
-    invoiceNumber: 'INV/KSBY/2026/XI/003',
+    invoiceNumber: 'INV/GLGS/2026/XI/003',
     month: 'November 2026',
     tenantId: 'usr-tenant-03',
     tenantName: 'dr. Nadia Paramitha',
@@ -137,7 +137,7 @@ export const INITIAL_INVOICES: InvoiceItem[] = [
   },
   {
     id: 'inv-2026-11-04',
-    invoiceNumber: 'INV/KSBY/2026/XI/004',
+    invoiceNumber: 'INV/GLGS/2026/XI/004',
     month: 'November 2026',
     tenantId: 'usr-tenant-04',
     tenantName: 'Dimas Wicaksono',
@@ -363,14 +363,14 @@ export const INITIAL_BOOKING_LEADS: BookingLeadItem[] = [
     id: 'lead-001',
     applicantName: 'Jessica Aurelia Gunawan',
     phone: '0812-8899-7711',
-    email: 'jessica.aurelia@unesa.ac.id',
+    email: 'jessica.aurelia@gmail.com',
     roomRequested: 'Tipe Deluxe Queen (Lantai 2)',
-    occupantType: 'Mahasiswa Unesa Ketintang',
+    occupantType: 'Karyawan Kantor Sidoarjo Kota',
     checkInDate: '1 November 2026',
     durationMonths: 12,
     billingCycle: 'yearly',
     status: 'Menunggu Review',
-    notes: 'Ingin bawa motor pribadi. Sudah survey lokasi dekat Stasiun Wonokromo.',
+    notes: 'Ingin bawa motor pribadi. Sudah survey lokasi dekat Stasiun Sidoarjo.',
     createdAt: '22 Okt 2026, 11:30 WIB',
   },
   {
@@ -379,7 +379,7 @@ export const INITIAL_BOOKING_LEADS: BookingLeadItem[] = [
     phone: '0818-4422-9900',
     email: 'fajar.nugraha@bumn.co.id',
     roomRequested: 'Tipe Balkon Pribadi (Lantai 3)',
-    occupantType: 'Karyawan BUMN Stasiun Wonokromo',
+    occupantType: 'Karyawan BUMN Stasiun Sidoarjo',
     checkInDate: '5 November 2026',
     durationMonths: 6,
     billingCycle: 'monthly',
@@ -410,7 +410,7 @@ export const INITIAL_ANNOUNCEMENTS: KostAnnouncement[] = [
     content: 'Diberitahukan kepada seluruh penghuni bahwa pada hari Sabtu pukul 09:00 - 11:30 WIB akan dilakukan pembersihan rutin tandon air pusat. Air tetap mengalir dari tandon cadangan.',
     category: 'Maintenance',
     date: '21 Okt 2026',
-    sender: 'Pengelola Kost Sby',
+    sender: 'Pengelola Griya Logos',
     isImportant: true,
   },
   {
@@ -428,7 +428,7 @@ export const INITIAL_ANNOUNCEMENTS: KostAnnouncement[] = [
     content: 'Pengingat kenyamanan bersama untuk menjaga volume audio dan percakapan di area koridor saat jam tenang. Terima kasih atas pengertian seluruh penghuni.',
     category: 'Penting',
     date: '10 Okt 2026',
-    sender: 'Pengelola Kost Sby',
+    sender: 'Pengelola Griya Logos',
     isImportant: false,
   },
 ];

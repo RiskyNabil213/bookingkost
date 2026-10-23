@@ -73,7 +73,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
   const getWhatsAppUrl = () => {
     const text = encodeURIComponent(
-      `*KONFIRMASI BOOKING KOST SBY*\n` +
+      `*KONFIRMASI RESERVASI GRIYA LOGOS KOST EKSKLUSIF*\n` +
       `No. Ref: *${bookingCode}*\n` +
       `----------------------------------------\n` +
       `• *Tipe Kamar*: ${room.title} (${room.category})\n` +
@@ -86,9 +86,9 @@ export const BookingModal: React.FC<BookingModalProps> = ({
       `• *Tipe Pengajuan*: ${bookingType === 'survey' ? 'Jadwalkan Survei Lokasi' : 'Booking Langsung Kamar'}\n` +
       `• *Estimasi Total*: ${formatIDR(grandTotal)}\n` +
       `----------------------------------------\n` +
-      `Halo Pengelola Kost Sby, mohon konfirmasi ketersediaan kamar di atas.`
+      `Halo Pengelola Griya Logos, mohon konfirmasi ketersediaan kamar di atas.`
     );
-    return `https://wa.me/6281234567890?text=${text}`;
+    return `https://wa.me/6282332660126?text=${text}`;
   };
 
   const copyCode = () => {
@@ -376,7 +376,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   <span>Kirim Konfirmasi via WhatsApp Sekarang</span>
                 </a>
                 <p className="text-[11px] text-[#8C7B70]">
-                  Klik tombol di atas untuk langsung terhubung dengan Pengelola Kost Sby.
+                  Klik tombol di atas untuk langsung terhubung dengan Pengelola Griya Logos Kost Eksklusif.
                 </p>
               </div>
 

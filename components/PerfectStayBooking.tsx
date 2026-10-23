@@ -63,10 +63,10 @@ export const PerfectStayBooking: React.FC<PerfectStayBookingProps> = ({
         {/* Section Header */}
         <div className="text-center space-y-3 max-w-2xl mx-auto">
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-white tracking-tight">
-            Pesan Kamar di Kost Sby
+            Pesan Kamar di Griya Logos
           </h2>
           <p className="text-xs uppercase tracking-[0.2em] text-[#C5A880] font-semibold">
-            PILIH KAMAR SESUAI KEBUTUHAN ANDA DI WONOKROMO SURABAYA DENGAN FASILITAS LENGKAP.
+            PILIH KAMAR SESUAI KEBUTUHAN ANDA DI SIDOARJO DENGAN FASILITAS LENGKAP.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export const PerfectStayBooking: React.FC<PerfectStayBookingProps> = ({
           <div className="absolute inset-0 z-0 bg-[#16110E]">
             <img
               src="/images/rooms/kamar-balkon.jpg"
-              alt="Kost Sby Wonokromo Surabaya"
+              alt="Griya Logos Kost Eksklusif Sidoarjo"
               className="w-full h-full object-cover object-center filter brightness-[0.7] contrast-[1.05]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent pointer-events-none" />
@@ -192,10 +192,10 @@ export const PerfectStayBooking: React.FC<PerfectStayBookingProps> = ({
           <div className="flex flex-col sm:flex-row items-center justify-between pb-6 gap-4">
             <div>
               <span className="text-xs font-bold text-[#C5A880] uppercase tracking-wider block">
-                Lokasi Strategis di Wonokromo Surabaya
+                Lokasi Strategis di Sidoarjo Kota
               </span>
               <p className="text-xs text-stone-300 font-light">
-                Jl. Pulo Wonokromo No. 9, Surabaya Selatan — Dekat stasiun, rumah sakit, pusat belanja, dan kampus
+                Sidoarjo Kota, Jawa Timur — Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo
               </p>
             </div>
             <button

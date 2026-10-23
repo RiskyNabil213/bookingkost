@@ -60,10 +60,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuth, onScrollToSearch }) 
             {/* Brand Logo */}
             <Link href="/" className="flex items-center gap-2 group">
               <span className="font-serif text-2xl sm:text-3xl font-normal tracking-tight text-white transition-opacity group-hover:opacity-85">
-                kost sby.
+                griya logos.
               </span>
               <span className="hidden sm:inline-block text-[9px] uppercase tracking-[0.25em] text-[#C5A880] border-l border-white/30 pl-2.5 font-medium">
-                Wonokromo Surabaya
+                Sidoarjo Kota, Jawa Timur
               </span>
             </Link>
 
@@ -83,7 +83,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuth, onScrollToSearch }) 
             {/* Right CTAs */}
             <div className="hidden sm:flex items-center gap-3">
               <a
-                href="https://wa.me/6281234567890?text=Halo%20Admin%20Kost%20Sby,%20saya%20ingin%20tanya%20ketersediaan%20kamar"
+                href="https://wa.me/6282332660126?text=Halo%20Admin%20Griya%20Logos,%20saya%20ingin%20tanya%20ketersediaan%20kamar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 px-3 py-1.5 text-xs text-white/80 hover:text-[#25D366] transition-colors"
@@ -209,7 +209,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuth, onScrollToSearch }) 
           <div className="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm bg-[#16110E] p-6 shadow-2xl flex flex-col justify-between overflow-y-auto text-white">
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-white/10">
-                <span className="font-serif text-2xl tracking-tight text-white">kost sby.</span>
+                <span className="font-serif text-2xl tracking-tight text-white">griya logos.</span>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-2 rounded-full hover:bg-white/10"

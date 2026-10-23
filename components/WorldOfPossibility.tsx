@@ -13,7 +13,7 @@ export const WorldOfPossibility: React.FC = () => {
             Bukan Sekadar Kamar Kost, Tapi Kenyamanan Nyata
           </h2>
           <p className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-[#8C7B70] max-w-2xl mx-auto font-medium">
-            35 UNIT KAMAR EKSKLUSIF DENGAN AC DAIKIN, KM DALAM, DAN WIFI 100 MBPS DI SURABAYA
+            35 UNIT KAMAR EKSKLUSIF DENGAN AC, SMART TV, KM DALAM, DAN HIGH-SPEED WIFI DI SIDOARJO
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export const WorldOfPossibility: React.FC = () => {
             <div className="relative rounded-3xl overflow-hidden aspect-[3/4] shadow-xl group border border-[#DED5C6]">
               <img
                 src="/images/rooms/kamar-deluxe.jpg"
-                alt="Interior Kamar Kost Sby"
+                alt="Interior Kamar Griya Logos"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
@@ -78,7 +78,7 @@ export const WorldOfPossibility: React.FC = () => {
 
               <div className="space-y-3">
                 <p className="text-xs sm:text-sm text-[#4A3E37] leading-relaxed font-light">
-                  Kost Sby menyediakan 35 unit kamar siap huni di Wonokromo Surabaya. Setiap kamar dilengkapi kasur berkualitas, AC Daikin yang sejuk dan hemat daya, kamar mandi pribadi dengan water heater, meja kerja, serta akses kartu digital RFID 24 jam bebas jam malam.
+                  Griya Logos menyediakan 35 unit kamar siap huni di Sidoarjo Kota, Jawa Timur. Setiap kamar dilengkapi kasur berkualitas, AC sejuk, Smart TV, kamar mandi pribadi dengan water heater, meja kerja, area parkir mobil dan motor luas, serta akses 24 jam bebas bertanggung jawab.
                 </p>
 
                 <a

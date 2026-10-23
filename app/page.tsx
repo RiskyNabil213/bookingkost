@@ -118,7 +118,7 @@ export default function Home() {
         />
       </main>
 
-      {/* 8. Section 7: Dark Footer with Massive "kost sby" Typography */}
+      {/* 8. Section 7: Dark Footer with Massive "griya logos" Typography */}
       <Footer />
 
       {/* Interactive Modals */}

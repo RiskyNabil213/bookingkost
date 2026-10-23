@@ -70,10 +70,10 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenMapModal
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-[#1A1412]">
-                    Kost Sby — Kos Rindu Wonokromo
+                    Griya Logos Kost Eksklusif Sidoarjo
                   </h4>
                   <p className="text-xs text-[#6E6259]">
-                    Jl. Pulo Wonokromo No. 9, Wonokromo, Surabaya Selatan
+                    Sidoarjo Kota, Jawa Timur (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo)
                   </p>
                 </div>
               </div>
@@ -136,7 +136,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenMapModal
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A1412]/80 via-transparent to-black/20 pointer-events-none" />
 
-              {/* Pin 1: Kost Sby (Center) */}
+              {/* Pin 1: Griya Logos (Center) */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10">
                 <div className="relative">
                   <div className="w-12 h-12 rounded-full bg-[#1A1412] text-[#C5A880] flex items-center justify-center shadow-2xl ring-4 ring-white animate-bounce">
@@ -145,7 +145,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenMapModal
                   <div className="absolute -inset-2 rounded-full bg-[#C5A880]/40 -z-10 animate-ping" />
                 </div>
                 <div className="mt-2 bg-[#1A1412] text-[#FDFBF7] px-3.5 py-1.5 rounded-full text-xs font-bold shadow-xl border border-white/20 whitespace-nowrap">
-                  Kost Sby
+                  Griya Logos
                 </div>
               </div>
 
@@ -165,7 +165,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenMapModal
                   <Train className="w-4 h-4 text-blue-600" />
                 </div>
                 <span className="mt-1 bg-white/90 text-[#1A1412] text-[10px] font-bold px-2 py-0.5 rounded shadow">
-                  Stasiun MRT (900m)
+                  Stasiun Sidoarjo (900m)
                 </span>
               </div>
 

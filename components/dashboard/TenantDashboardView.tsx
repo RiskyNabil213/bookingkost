@@ -270,13 +270,13 @@ export const TenantDashboardView: React.FC = () => {
               150 Mbps Fiber
             </span>
           </div>
-          <p className="text-xs text-[#6E6259]">SSID: {user?.wifiSSID || 'KOST_SBY_100M'}</p>
+          <p className="text-xs text-[#6E6259]">SSID: {user?.wifiSSID || 'GRIYA_LOGOS_WIFI'}</p>
           <div className="flex items-center justify-between mt-1 mb-3">
             <span className="font-mono text-sm font-semibold text-[#1A1412] truncate max-w-[140px]">
-              {user?.wifiPassword || 'kostrindu-sby-2026'}
+              {user?.wifiPassword || 'griyalogos-sda-2026'}
             </span>
             <button
-              onClick={() => handleCopyWifi(user?.wifiPassword || 'kostrindu-sby-2026')}
+              onClick={() => handleCopyWifi(user?.wifiPassword || 'griyalogos-sda-2026')}
               className="p-1.5 rounded-lg text-stone-500 hover:text-stone-900 hover:bg-stone-100 flex items-center gap-1 text-xs"
               title="Salin Password WiFi"
             >
@@ -624,18 +624,18 @@ export const TenantDashboardView: React.FC = () => {
                 </h3>
               </div>
               <p className="text-xs text-white/70">
-                Staff dan pengelola Kost Sby siap melayani untuk kenyamanan dan keamanan Anda.
+                Staff dan pengelola Griya Logos siap melayani untuk kenyamanan dan keamanan Anda.
               </p>
 
               <div className="space-y-2.5 pt-1">
                 <a
-                  href="https://wa.me/6281234567890?text=Halo%20Pengelola%20Kost%20Sby,%20saya%20penghuni%20Kamar%20204"
+                  href="https://wa.me/6282332660126?text=Halo%20Pengelola%20Griya%20Logos,%20saya%20penghuni%20Kamar%20204"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-white/15 text-xs transition-colors"
                 >
-                  <span className="font-medium text-white">Pengelola Kost Sby</span>
-                  <span className="text-[#C5A880] font-semibold">0812-3456-7890</span>
+                  <span className="font-medium text-white">Pengelola Griya Logos</span>
+                  <span className="text-[#C5A880] font-semibold">0823-3266-0126</span>
                 </a>
 
                 <a
@@ -994,10 +994,10 @@ export const TenantDashboardView: React.FC = () => {
                       ? '8271 0812 9843 2190'
                       : paymentMethod === 'mandiri'
                       ? '8890 0812 9843 2190'
-                      : 'QRIS KOST SBY'}
+                      : 'QRIS GRIYA LOGOS'}
                   </p>
                   <p className="text-[11px] text-stone-500">
-                    Atas Nama: <strong>Pengelola Kost Sby (Aura Salsabila)</strong>
+                    Atas Nama: <strong>Pengelola Griya Logos (Aura Salsabila)</strong>
                   </p>
                 </div>
 
@@ -1231,7 +1231,7 @@ export const TenantDashboardView: React.FC = () => {
             </button>
 
             <div className="text-center pb-4 border-b border-stone-100 space-y-1">
-              <span className="font-serif text-2xl font-bold text-[#1A1412]">kost sby.</span>
+              <span className="font-serif text-2xl font-bold text-[#1A1412]">griya logos.</span>
               <p className="text-[10px] uppercase tracking-widest text-[#C5A880] font-semibold">
                 Kuitansi Resmi Pembayaran Sewa
               </p>

@@ -39,10 +39,10 @@ export const DashboardNavbar: React.FC = () => {
           <div className="flex items-center gap-4 sm:gap-6">
             <Link href="/" className="flex items-center gap-2 group">
               <span className="font-serif text-2xl font-normal tracking-tight text-white group-hover:text-[#C5A880] transition-colors">
-                kost sby.
+                griya logos.
               </span>
               <span className="hidden md:inline-block text-[9px] uppercase tracking-[0.2em] text-[#C5A880] border-l border-white/20 pl-2.5 font-medium">
-                Wonokromo Surabaya
+                Sidoarjo Kota, Jawa Timur
               </span>
             </Link>
 

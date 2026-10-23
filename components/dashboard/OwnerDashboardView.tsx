@@ -117,12 +117,12 @@ export const OwnerDashboardView: React.FC = () => {
               <span>Property Management Executive Suite</span>
             </div>
             <h1 className="font-serif text-2xl sm:text-4xl font-normal text-white tracking-tight">
-              {user?.propertyName || 'Kost Sby — Kos Rindu Wonokromo Surabaya'}
+              {user?.propertyName || 'Griya Logos Kost Eksklusif Sidoarjo'}
             </h1>
             <p className="text-white/70 text-xs sm:text-sm">
               Pengelola:{' '}
               <span className="text-white font-medium">{user?.name || 'Bpk. Hendrawan Pratama'}</span> •{' '}
-              {user?.propertyAddress || 'Jl. Pulo Wonokromo No. 9, Wonokromo, Surabaya Selatan'}
+              {user?.propertyAddress || 'Sidoarjo Kota, Jawa Timur (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo)'}
             </p>
           </div>
 
@@ -722,7 +722,7 @@ export const OwnerDashboardView: React.FC = () => {
 
                   <div className="flex items-center gap-2 flex-wrap">
                     <a
-                      href={`https://wa.me/${lead.phone.replace(/[^0-9]/g, '')}?text=Halo%20${encodeURIComponent(lead.applicantName)},%20kami%20dari%20Pengelola%20Kost%20Sby%20menindaklanjuti%20booking%20kamar%20Anda`}
+                      href={`https://wa.me/${lead.phone.replace(/[^0-9]/g, '')}?text=Halo%20${encodeURIComponent(lead.applicantName)},%20kami%20dari%20Pengelola%20Griya%20Logos%20menindaklanjuti%20booking%20kamar%20Anda`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center gap-1.5"
@@ -941,7 +941,7 @@ export const OwnerDashboardView: React.FC = () => {
                 <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
                 <h4 className="font-bold text-base">Pengumuman Berhasil Diterbitkan!</h4>
                 <p className="text-xs text-emerald-700">
-                  Notifikasi telah disiarkan ke seluruh portal penghuni Kost Sby.
+                  Notifikasi telah disiarkan ke seluruh portal penghuni Griya Logos.
                 </p>
               </div>
             ) : (

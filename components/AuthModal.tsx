@@ -35,7 +35,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
   const handleLoginSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     loginAs(role, {
-      email: email || (role === 'penghuni' ? 'aura.salsabila@gmail.com' : 'hendrawan@kostsby.com'),
+      email: email || (role === 'penghuni' ? 'aura.salsabila@gmail.com' : 'hendrawan@griyalogos.com'),
       name: name || (role === 'penghuni' ? 'Aura Salsabila' : 'Bpk. Hendrawan Pratama'),
     });
     setSubmitted(true);
@@ -79,10 +79,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
         {/* Modal Header */}
         <div className="text-center space-y-2 mb-6">
           <div className="w-12 h-12 rounded-full bg-[#1A1412] text-[#FDFBF7] flex items-center justify-center mx-auto font-serif text-xl font-bold shadow-md">
-            k.
+            g.
           </div>
           <h3 className="font-serif text-2xl font-bold text-[#1A1412]">
-            {isRegister ? 'Daftar Akun Baru' : 'Masuk ke Portal Kost Sby'}
+            {isRegister ? 'Daftar Akun Baru' : 'Masuk ke Portal Griya Logos'}
           </h3>
           <p className="text-xs text-[#6E6259]">
             Pilih peran Anda untuk diarahkan ke halaman dashboard yang sesuai.
@@ -152,7 +152,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
                   className="p-2.5 rounded-xl bg-white hover:bg-stone-50 border border-[#E8E2D4] text-left transition-all hover:border-[#C5A880]"
                 >
                   <p className="font-bold text-xs text-[#1A1412]">Bpk. Hendrawan</p>
-                  <p className="text-[10px] text-stone-500">Pengelola Kost Sby</p>
+                  <p className="text-[10px] text-stone-500">Pengelola Griya Logos</p>
                 </button>
               </div>
             </div>
@@ -190,7 +190,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
                     type="text"
                     required
                     placeholder={
-                      role === 'penghuni' ? 'aura.salsabila@gmail.com' : 'hendrawan@kostsby.com'
+                      role === 'penghuni' ? 'aura.salsabila@gmail.com' : 'hendrawan@griyalogos.com'
                     }
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}

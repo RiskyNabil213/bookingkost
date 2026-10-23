@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute inset-0 z-0 bg-[#16110E]">
         <img
           src="/images/rooms/gedung-kost.jpg"
-          alt="Kost Sby Wonokromo Surabaya"
+          alt="Griya Logos Kost Eksklusif Sidoarjo"
           className="w-full h-full object-cover object-center filter brightness-[0.70] contrast-[1.05]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/60 pointer-events-none" />
@@ -61,16 +61,16 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="relative z-10 text-center max-w-4xl mx-auto my-auto space-y-4 pt-10 sm:pt-16">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#C5A880] text-xs font-semibold tracking-wider uppercase mx-auto">
           <Building className="w-3.5 h-3.5" />
-          <span>Hunian Nyaman di Wonokromo Surabaya Selatan</span>
+          <span>HUNIAN EKSKLUSIF DI SIDOARJO JAWA TIMUR</span>
         </div>
 
         <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-white tracking-tight leading-[1.1] drop-shadow-lg">
-          Kost Bersih & Strategis di <br />
-          <span className="italic font-light text-[#F4ECE1]">Wonokromo Surabaya</span>
+          Hunian Eksklusif, Tenang & Strategis di <br />
+          <span className="italic font-light text-[#F4ECE1]">Jantung Sidoarjo</span>
         </h1>
 
         <p className="text-xs sm:text-sm text-white/80 font-light max-w-2xl mx-auto leading-relaxed">
-          35 kamar berfasilitas lengkap di Jl. Pulo Wonokromo No. 9 — AC Daikin, WiFi 100 Mbps, akses kunci pintar RFID 24 jam, dan kamar mandi dalam, siap huni mulai <strong className="text-white font-semibold">Rp 1.350.000</strong>/bulan.
+          Kamar eksklusif berfasilitas unggulan di Sidoarjo Kota (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo) — AC, High-Speed WiFi, Smart TV, Kamar Mandi Dalam & Water Heater, Parkir Mobil/Motor Luas, Akses 24 Jam Bebas Bertanggung Jawab mulai <strong className="text-white font-semibold">Rp 1.350.000</strong>/bulan.
         </p>
 
         {/* Small Pill Button */}
@@ -84,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({
           </a>
 
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Pengelola%20Kost%20Sby,%20saya%20ingin%20tanya%20ketersediaan%20kamar"
+            href="https://wa.me/6282332660126?text=Halo%20Pengelola%20Griya%20Logos,%20saya%20ingin%20tanya%20ketersediaan%20kamar"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-light border border-white/20 backdrop-blur-md transition-all duration-300"
@@ -101,20 +101,20 @@ export const Hero: React.FC<HeroProps> = ({
           </span>
           <span className="flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5 text-[#C5A880]" />
-            <span>Kunci Smart RFID 24 Jam</span>
+            <span>Akses 24 Jam Bebas Bertanggung Jawab</span>
           </span>
           <span className="flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5 text-[#C5A880]" />
-            <span>WiFi Fiber 100 Mbps</span>
+            <span>High-Speed WiFi</span>
           </span>
           <span className="flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5 text-[#C5A880]" />
-            <span>Air Bersih PDAM 24 Jam</span>
+            <span>Parkir Mobil & Motor Luas</span>
           </span>
         </div>
       </div>
 
-      {/* 3. Floating Glass Search & Filter Widget specifically for Kost Sby rooms */}
+      {/* 3. Floating Glass Search & Filter Widget specifically for Griya Logos rooms */}
       <div className="relative z-10 w-full max-w-5xl mx-auto mt-6 sm:mt-10">
         <div
           id="search-filter-box"
@@ -124,13 +124,13 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-white/15 gap-3">
             <div>
               <h3 className="font-serif text-lg sm:text-xl font-normal text-white tracking-wide flex items-center gap-2">
-                <span>Filter Kamar Kost Sby</span>
+                <span>Cari Kamar Griya Logos</span>
                 <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/20 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
                   Total 35 Kamar
                 </span>
               </h3>
               <p className="text-xs text-white/70 font-light">
-                Jl. Pulo Wonokromo No. 9, Wonokromo, Surabaya Selatan
+                Sidoarjo Kota, Jawa Timur (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo)
               </p>
             </div>
 

@@ -25,7 +25,7 @@ export const ExperienceWorldTestimonial: React.FC = () => {
         {/* Section Tag */}
         <div className="text-center">
           <span className="text-[11px] uppercase tracking-[0.25em] font-bold text-[#8C7B70]">
-            ULASAN PENGHUNI KOST SBY
+            ULASAN PENGHUNI GRIYA LOGOS
           </span>
         </div>
 
@@ -36,7 +36,7 @@ export const ExperienceWorldTestimonial: React.FC = () => {
             <span className="inline-flex items-center align-middle mx-1 sm:mx-2 w-14 sm:w-20 h-7 sm:h-10 rounded-full overflow-hidden shadow-md ring-2 ring-white">
               <img
                 src="/images/rooms/kamar-deluxe.jpg"
-                alt="Kost Sby Room"
+                alt="Griya Logos Room"
                 className="w-full h-full object-cover"
               />
             </span>{' '}
@@ -52,7 +52,7 @@ export const ExperienceWorldTestimonial: React.FC = () => {
                 <img src={testimonials[2].avatar} alt="" className="w-full h-full object-cover" />
               </span>
             </span>{' '}
-            Anda di Surabaya.
+            Anda di Sidoarjo.
           </h2>
         </div>
 
@@ -70,7 +70,7 @@ export const ExperienceWorldTestimonial: React.FC = () => {
                 4.9 / 5.0
               </span>
               <p className="text-[11px] text-[#6E6259] font-light leading-snug">
-                Berdasarkan ulasan penghuni mahasiswa Unesa, tenaga medis RS Islam, dan pekerja di Surabaya Selatan.
+                Berdasarkan ulasan pekerja kantor, tenaga medis, dan profesional di Sidoarjo Kota.
               </p>
             </div>
           </div>
@@ -156,7 +156,7 @@ export const ExperienceWorldTestimonial: React.FC = () => {
               href="#vision"
               className="px-5 py-3 rounded-full bg-[#FAF7F2] border border-[#DED5C6] text-xs font-semibold text-[#1A1412] hover:bg-white transition-colors"
             >
-              Tentang Kost Sby
+              Tentang Griya Logos
             </a>
           </div>
 

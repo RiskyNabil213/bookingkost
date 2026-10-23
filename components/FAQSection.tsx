@@ -23,7 +23,7 @@ export const FAQSection: React.FC = () => {
             Informasi & Panduan Lengkap
           </h2>
           <p className="text-[#6E6259] text-sm sm:text-base">
-            Semua hal yang perlu Anda ketahui mengenai aturan, kenyamanan, dan proses sewa di Kost Sby.
+            Semua hal yang perlu Anda ketahui mengenai aturan, kenyamanan, dan proses sewa di Griya Logos Kost Eksklusif Sidoarjo.
           </p>
         </div>
 

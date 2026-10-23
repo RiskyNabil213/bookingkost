@@ -26,7 +26,7 @@ export const VisionToReality: React.FC<VisionToRealityProps> = ({ onSelectCatego
             <div className="relative rounded-3xl overflow-hidden aspect-[16/10] shadow-2xl group border border-[#DED5C6]">
               <img
                 src="/images/rooms/kamar-superior.jpg"
-                alt="Kost Sby Wonokromo Surabaya"
+                alt="Griya Logos Kost Eksklusif Sidoarjo"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
@@ -46,7 +46,7 @@ export const VisionToReality: React.FC<VisionToRealityProps> = ({ onSelectCatego
                   Kamar Siap Huni
                 </div>
                 <p className="text-[11px] text-[#6E6259] hidden sm:block mt-0.5">
-                  Gedung 3 lantai di Wonokromo
+                  Gedung modern di Sidoarjo Kota
                 </p>
               </div>
 
@@ -80,15 +80,15 @@ export const VisionToReality: React.FC<VisionToRealityProps> = ({ onSelectCatego
           <div className="lg:col-span-5 space-y-6">
             <div className="space-y-4">
               <span className="text-[11px] uppercase tracking-[0.25em] font-semibold text-[#8C7B70] block">
-                TENTANG KOST SBY
+                TENTANG GRIYA LOGOS
               </span>
 
               <h3 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1A1412] leading-[1.15] tracking-tight">
-                Komitmen Kenyamanan Tinggal di Surabaya Selatan
+                Komitmen Kenyamanan Tinggal di Sidoarjo Kota
               </h3>
 
               <p className="text-xs sm:text-sm text-[#4A3E37] leading-relaxed font-light">
-                Kost Sby berlokasi strategis di Jl. Pulo Wonokromo No. 9, dekat dengan Stasiun Wonokromo, DTC, Royal Plaza, RS Islam A. Yani, serta berbagai kampus ternama seperti Unesa Ketintang dan UINSA. Kami menyediakan hunian kost yang bersih, teratur, aman, dan nyaman untuk pekerja maupun mahasiswa.
+                Griya Logos Kost Eksklusif berlokasi strategis di Sidoarjo Kota, Jawa Timur, dekat dengan akses Gerbang Tol Sidoarjo, Stasiun Sidoarjo, RSUD Sidoarjo, pusat perbelanjaan, dan kawasan perkantoran. Kami menyediakan hunian kost yang tenang, bersih, aman, dan nyaman untuk pekerja profesional maupun mahasiswa.
               </p>
             </div>
 
@@ -127,7 +127,7 @@ export const VisionToReality: React.FC<VisionToRealityProps> = ({ onSelectCatego
                     Fasilitas Kamar Lengkap
                   </h4>
                   <p className="text-[11px] text-[#6E6259] font-light">
-                    AC Daikin, KM Dalam, Water Heater, WiFi Fiber, Dapur Bersama, & Parkir Motor
+                    AC, High-Speed WiFi, Smart TV, KM Dalam, Water Heater, Dapur Bersama, & Parkir Mobil/Motor Luas
                   </p>
                 </div>
                 <div className="w-9 h-9 rounded-full bg-[#1A1412] text-white flex items-center justify-center transition-transform group-hover:translate-x-1">

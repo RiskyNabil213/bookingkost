@@ -256,7 +256,7 @@ export const RoomDetailModal: React.FC<RoomDetailModalProps> = ({
             <div className="space-y-4 text-xs">
               <div className="bg-white rounded-2xl border border-[#E8E2D4] p-4 space-y-3">
                 <h4 className="text-[11px] font-bold uppercase text-[#8C7B70] tracking-wider">
-                  Tata Tertib Hunian Kost Sby
+                  Tata Tertib Hunian Griya Logos
                 </h4>
                 <div className="space-y-2.5 text-[#1A1412]">
                   {room.rules.map((rule, idx) => (

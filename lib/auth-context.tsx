@@ -79,7 +79,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   // Restore session from localStorage on mount
   useEffect(() => {
     try {
-      const savedRole = localStorage.getItem('kostsby_auth_role');
+      const savedRole = localStorage.getItem('griyalogos_auth_role');
       if (savedRole === 'penghuni') {
         setUser(DEMO_TENANT);
       } else if (savedRole === 'pengelola') {
@@ -99,14 +99,14 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     };
     setUser(finalUser);
     try {
-      localStorage.setItem('kostsby_auth_role', targetRole);
+      localStorage.setItem('griyalogos_auth_role', targetRole);
     } catch {}
   };
 
   const logout = () => {
     setUser(null);
     try {
-      localStorage.removeItem('kostsby_auth_role');
+      localStorage.removeItem('griyalogos_auth_role');
     } catch {}
   };
 
@@ -251,7 +251,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       content: announcement.content,
       category: announcement.category,
       date: 'Hari ini',
-      sender: user?.name || 'Manajemen Kost Sby',
+      sender: user?.name || 'Manajemen Griya Logos',
       isImportant: announcement.isImportant || false,
     };
     setAnnouncements((prev) => [newAnn, ...prev]);

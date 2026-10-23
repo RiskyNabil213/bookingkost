@@ -16,18 +16,18 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kost Sby — Sewa Kamar Kost Bulanan di Wonokromo Surabaya",
+  title: "Griya Logos Kost Eksklusif Sidoarjo — Hunian Nyaman & Strategis",
   description:
-    "Kost Sby: 35 kamar eksklusif berlokasi di Jl. Pulo Wonokromo No. 9, Wonokromo, Surabaya Selatan. Fasilitas AC Daikin, WiFi 100 Mbps, Kamar Mandi Dalam, Water Heater, Smart RFID 24 Jam.",
+    "Griya Logos Kost Eksklusif Sidoarjo: Hunian eksklusif, tenang, dan strategis di Sidoarjo Kota, Jawa Timur (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo). Dilengkapi AC, High-Speed WiFi, Smart TV, Kamar Mandi Dalam & Water Heater, Parkir Mobil/Motor Luas, Akses 24 Jam Bebas Bertanggung Jawab.",
   keywords: [
-    "kost sby",
-    "kos rindu surabaya",
-    "kost wonokromo",
-    "kost bulanan surabaya",
-    "kost ac surabaya selatan",
-    "kost dekat royal plaza",
-    "kost dekat unesa ketintang",
-    "kost pulo wonokromo",
+    "griya logos",
+    "griya logos sidoarjo",
+    "kost eksklusif sidoarjo",
+    "kost sidoarjo kota",
+    "kost dekat tol sidoarjo",
+    "kost dekat stasiun sidoarjo",
+    "sewa kost sidoarjo",
+    "kost ac sidoarjo",
   ],
 };
 

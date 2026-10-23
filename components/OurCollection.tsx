@@ -45,13 +45,13 @@ export const OurCollection: React.FC<OurCollectionProps> = ({
         {/* Section Header */}
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <span className="text-[11px] uppercase tracking-[0.25em] font-bold text-[#8C7B70] block">
-            PILIHAN UNIT KOST SBY
+            PILIHAN UNIT GRIYA LOGOS
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1A1412] leading-[1.15] tracking-tight">
-            Katalog Kamar Kos Rindu SBY
+            Katalog Kamar Griya Logos Sidoarjo
           </h2>
           <p className="text-xs sm:text-sm text-[#6E6259] font-light max-w-xl mx-auto leading-relaxed">
-            Semua unit kamar telah dilengkapi furnitur lengkap, AC, kamar mandi dalam, akses kunci pintar RFID 24 jam, dan WiFi dedicated.
+            Semua unit kamar telah dilengkapi furnitur lengkap, AC, Smart TV, kamar mandi dalam & water heater, akses 24 jam bebas bertanggung jawab, dan High-Speed WiFi.
           </p>
         </div>
 
@@ -226,7 +226,7 @@ export const OurCollection: React.FC<OurCollectionProps> = ({
             href="#booking-section"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#1A1412] hover:bg-black text-white text-xs sm:text-sm font-semibold shadow-lg transition-transform active:scale-95"
           >
-            <span>Pesan Kamar Langsung di Kost Sby</span>
+            <span>Pesan Kamar Langsung di Griya Logos</span>
             <ArrowRight className="w-4 h-4 text-[#C5A880]" />
           </a>
         </div>

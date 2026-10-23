@@ -23,20 +23,20 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Contact Info (5 cols) */}
           <div className="col-span-2 md:col-span-5 space-y-4">
             <span className="font-serif text-3xl sm:text-4xl font-normal text-white tracking-tight block">
-              kost sby.
+              griya logos.
             </span>
             <p className="text-xs text-white/70 font-light max-w-sm leading-relaxed">
-              Hunian kost nyaman, bersih, dan strategis dengan 35 kamar eksklusif di Wonokromo, Surabaya Selatan. Dilengkapi akses RFID 24 jam, AC Daikin, WiFi fiber, dan kamar mandi dalam.
+              Hunian kost eksklusif, tenang, dan strategis di Sidoarjo Kota, Jawa Timur. Dilengkapi AC, High-Speed WiFi, Smart TV, Kamar Mandi Dalam & Water Heater, Parkir Mobil/Motor Luas, serta Akses 24 Jam Bebas Bertanggung Jawab.
             </p>
 
             <div className="space-y-2 pt-2 text-xs text-white/70 font-light">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#C5A880] mt-0.5 shrink-0" />
-                <span>Jl. Pulo Wonokromo No. 9, Wonokromo, Surabaya Selatan</span>
+                <span>Sidoarjo Kota, Jawa Timur (Dekat Akses Tol Sidoarjo & Stasiun Sidoarjo)</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#C5A880] shrink-0" />
-                <span>+62 812-3456-7890 (Pengelola Kost Sby)</span>
+                <span>+62 823-3266-0126 (Pengelola Griya Logos)</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#C5A880] shrink-0" />
@@ -65,12 +65,12 @@ export const Footer: React.FC = () => {
               Titik Terdekat
             </span>
             <ul className="space-y-2 text-xs text-white/60 font-light">
-              <li><a href="#booking-section" className="hover:text-white transition-colors">Stasiun Wonokromo</a></li>
-              <li><a href="#booking-section" className="hover:text-white transition-colors">DTC Wonokromo</a></li>
-              <li><a href="#booking-section" className="hover:text-white transition-colors">Royal Plaza</a></li>
-              <li><a href="#booking-section" className="hover:text-white transition-colors">RS Islam Surabaya</a></li>
-              <li><a href="#booking-section" className="hover:text-white transition-colors">Kampus Unesa</a></li>
-              <li><a href="#booking-section" className="hover:text-white transition-colors">Terminal Joyoboyo</a></li>
+              <li><a href="#booking-section" className="hover:text-white transition-colors">Akses Tol Sidoarjo</a></li>
+              <li><a href="#booking-section" className="hover:text-white transition-colors">Stasiun Sidoarjo</a></li>
+              <li><a href="#booking-section" className="hover:text-white transition-colors">Alun-Alun Sidoarjo</a></li>
+              <li><a href="#booking-section" className="hover:text-white transition-colors">RSUD Sidoarjo</a></li>
+              <li><a href="#booking-section" className="hover:text-white transition-colors">Suncity Mall Sidoarjo</a></li>
+              <li><a href="#booking-section" className="hover:text-white transition-colors">Lippo Plaza Sidoarjo</a></li>
             </ul>
           </div>
 
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
               Informasi
             </span>
             <ul className="space-y-2 text-xs text-white/60 font-light">
-              <li><a href="#vision" className="hover:text-white transition-colors">Tentang Kost Sby</a></li>
+              <li><a href="#vision" className="hover:text-white transition-colors">Tentang Griya Logos</a></li>
               <li><a href="#possibility" className="hover:text-white transition-colors">Fasilitas Kost</a></li>
               <li><a href="#reviews" className="hover:text-white transition-colors">Ulasan Penghuni</a></li>
               <li><a href="#booking-section" className="hover:text-white transition-colors">Tata Cara Sewa</a></li>
@@ -88,17 +88,17 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* MASSIVE "kost sby" Typography */}
+        {/* MASSIVE "griya logos" Typography */}
         <div className="pt-6 select-none overflow-hidden text-center">
-          <span className="font-serif text-5xl sm:text-8xl md:text-[11rem] lg:text-[14rem] xl:text-[17rem] font-normal tracking-tight text-white/90 leading-none inline-block">
-            kost sby
+          <span className="font-serif text-4xl sm:text-7xl md:text-[9rem] lg:text-[12rem] xl:text-[14rem] font-normal tracking-tight text-white/90 leading-none inline-block">
+            griya logos
           </span>
         </div>
 
         {/* Bottom Legal Notice */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/50 font-light">
-          <span>Hunian Kost Nyaman & Strategis di Wonokromo Surabaya</span>
-          <span>© 2026 Kost Sby (Kos Rindu SBY). Hak Cipta Dilindungi.</span>
+          <span>Griya Logos Kost Eksklusif Sidoarjo — Hunian Nyaman & Strategis</span>
+          <span>© 2026 Griya Logos Kost Eksklusif Sidoarjo. Hak Cipta Dilindungi.</span>
           <button
             onClick={scrollToTop}
             className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer"

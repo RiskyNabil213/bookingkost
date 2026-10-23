@@ -55,8 +55,8 @@ export const TestimonialCarousel: React.FC = () => {
             Kepercayaan yang Dibangun dari Kenyamanan
           </h2>
           <p className="text-stone-300 text-sm sm:text-base font-normal">
-            Dengar langsung pengalaman para residen dokter, insinyur perangkat lunak, dan mahasiswa
-            yang menjadikan Kost Sby sebagai rumah kedua mereka.
+            Dengar langsung pengalaman para residen dokter, insinyur perangkat lunak, dan profesional
+            yang menjadikan Griya Logos sebagai rumah kedua mereka.
           </p>
         </div>
 
